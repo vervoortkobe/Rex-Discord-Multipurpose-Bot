@@ -1,0 +1,331 @@
+/*
+  ____           _           _                
+ |  _ \ _____  _| |__   ___ | |_   __ _  __ _ 
+ | |_) / _ \ \/ / '_ \ / _ \| __| / _` |/ _` |
+ |  _ <  __/>  <| |_) | (_) | |_ | (_| | (_| |
+ |_| \_\___/_/\_\_.__/ \___/ \__(_)__, |\__,_|
+                                  |___/     
+*/
+
+/* DESKTOPS */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #23272a;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    user-select: none;
+  }
+  .redback {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background: linear-gradient(-45deg, #ffffff, #ff0000, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    user-select: none;
+  }
+  .logo {
+    border: 6px solid #fff;
+    border-radius: 400px;
+    width: 18%;
+    margin-top: 6%;
+    user-select: none;
+  }
+  h1 {
+    text-align: center;
+    font-family: roboto, sans-serif;
+    color: #fff;
+    font-size: 48px;
+    cursor: default;
+    user-select: none;
+  }
+  h3 {
+    text-align: center;
+    font-family: roboto, sans-serif;
+    color: #fff;
+    font-size: 24px;
+    cursor: default;
+    user-select: none;
+  }
+  .leftbutton {
+    left: 40%;
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.25s;
+    outline: none;
+    user-select: none;
+  }
+  .rightbutton {
+    right: 28%;
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.25s;
+    outline: none;
+    user-select: none;
+  }
+  .abouth3 {
+    text-align: center;
+    width: 775px;
+    user-select: none;
+  }
+  .mod, .config, .tickets, .levels, .other, .fun, .imgs, .nsfw, .about, .undefined {
+    outline: none;
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background: linear-gradient(-45deg, #ffffff, #ff0000, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    cursor: pointer;
+    user-select: none;
+  }
+  .mod, .tickets, .other, .imgs, .about {
+    left: 40%;
+    user-select: none;
+  }
+  .config, .levels, .fun, .nsfw, .undefined {
+    right: 28%;
+    user-select: none;
+  }
+  .customizable {
+    display: none;
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 46.5%;
+    user-select: none;
+  }
+  .footerwave {
+    margin-top: -35%;
+    user-select: none;
+  }
+  .footer {
+    margin-top: -2.5%;
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+  }
+  .leftbutton:hover, .rightbutton:hover {
+    border: 2px solid #fff;
+    user-select: none;
+  }
+  .middlebutton {
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #6a89d1;
+    transition: ease-in-out 0.25s;
+    outline: none;
+    box-shadow: 0px 0px 20px #6a89d1;
+    user-select: none;
+  }
+  .middlebutton:hover {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #6a89d1;
+    user-select: none;
+  }
+  .footer:hover {
+    color: #6a89d1;
+    user-select: none;
+  }
+  .prefix {
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 30px;
+    outline: none;
+    user-select: none;
+  }
+  .prefix:hover + .customizable {
+    display: block;
+    user-select: none;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #43494e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6a89d1;
+  }
+  .servers {
+    position: absolute;
+    width: 240px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #6a89d1;
+    transition: ease-in-out 0.25s;
+    outline: none;
+    box-shadow: 0px 0px 20px #6a89d1;
+    left: 40%;
+    cursor: default;
+    vertical-align: middle;
+    line-height: 100px;
+    user-select: none;
+  }
+  .users {
+    position: absolute;
+    width: 240px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #6a89d1;
+    transition: ease-in-out 0.25s;
+    outline: none;
+    box-shadow: 0px 0px 20px #6a89d1;
+    right: 28%;
+    cursor: default;
+    vertical-align: middle;
+    line-height: 100px;
+    user-select: none;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    user-select: none;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    user-select: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #43494e;
+    -webkit-transition: .4s;
+    transition: .4s;
+    user-select: none;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    user-select: none;
+  }
+  input:checked + .slider {
+    background-color: #6a89d1;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #6a89d1;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+    user-select: none;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+    user-select: none;
+  }
+  .modes {
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    position: relative;
+    cursor: default;
+    text-align: center;
+    user-select: none;
+  }
+}
