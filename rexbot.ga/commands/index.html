@@ -1,0 +1,1271 @@
+<!--
+  ____           _           _                
+ |  _ \ _____  _| |__   ___ | |_   __ _  __ _ 
+ | |_) / _ \ \/ / '_ \ / _ \| __| / _` |/ _` |
+ |  _ <  __/>  <| |_) | (_) | |_ | (_| | (_| |
+ |_| \_\___/_/\_\_.__/ \___/ \__(_)__, |\__,_|
+                                  |___/     
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rex - Commands</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rex is a very useful and multipurpose Discord bot for your Discord server! It has many functions and over 100 commands! What are you waiting for? Invite Rex to your own Discord server!">
+    <meta name="keywords" content="rex discord bot,discord bot,rex home,rex,discord,discordapp,bot,discord bot,discord bots,rex discordapp,discordapp,automod,nsfw,auto-mod,free,easy configuration,discord website,rex bot,
+                                   discord rex bot,discord bot,discord,multipurpose bot, multifunctional bot,multifunction bot,discord logging system,logging sysmtem,moderation,auto-moderation,auto moderation,block bad words,
+                                   block swear words,block scold words,welcome,leave,user event announcement,truly customizable,100% customizable,truly 100% customizable,logging system,memes,images,funny,auto-role, auto role,
+                                   give roles on join,fun commands,fun,entertaining,entertaining commands,fun and entertaining commands,easy-to-use,advanced,many functions,many commands,
+                                   tickets,ticket system,tickets function,discord ticket bot,discord giveaway,many commands,commands,support tickets,moderation,configuration,manage your server,manage your discord server,
+                                   how to manage my server,manage your server,how to manage my discord server,manage logging,moderation logging,uptime,fast,fast discord bot">
+    <meta name="author" content="Tsunami#6271">
+    <meta name="theme-color" content="#ff0000">
+    
+    <meta property="og:title" content="Rex - Commands">
+    <meta property="og:url" content="./commands">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rex is a very useful and multipurpose Discord bot for your Discord server! It has many functions and over 100 commands! What are you waiting for? Invite Rex to your own Discord server!">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/516227551480381451/813037527145381928/logo.png?size=1280">
+    <meta property="og:image:width" content="64">
+    <meta property="og:image:height" content="64">
+    <meta property="og:keywords" content="rex discord bot,discord bot,rex home,rex,discord,discordapp,bot,discord bot,discord bots,rex discordapp,discordapp,automod,nsfw,auto-mod,free,easy configuration,discord website,rex bot,
+                                   discord rex bot,discord bot,discord,multipurpose bot, multifunctional bot,multifunction bot,discord logging system,logging sysmtem,moderation,auto-moderation,auto moderation,block bad words,
+                                   block swear words,block scold words,welcome,leave,user event announcement,truly customizable,100% customizable,truly 100% customizable,logging system,memes,images,funny,auto-role, auto role,
+                                   give roles on join,fun commands,fun,entertaining,entertaining commands,fun and entertaining commands,easy-to-use,advanced,many functions,many commands,
+                                   tickets,ticket system,tickets function,discord ticket bot,discord giveaway,many commands,commands,support tickets,moderation,configuration,manage your server,manage your discord server,
+                                   how to manage my server,manage your server,how to manage my discord server,manage logging,moderation logging,uptime,fast,fast discord bot">
+    <meta property="og:locale" content="en-US">
+    
+    <link id="favicon" rel="icon" href="https://cdn.discordapp.com/attachments/516227551480381451/813037527145381928/logo.png?size=1280">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="../commands/desktopstyle.css">
+    <link rel="stylesheet" href="../commands/mobilestyle.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div id="header" class="header" data-aos="fade-down">
+      <center>
+        <a href="../">
+          <img src="https://cdn.discordapp.com/attachments/516227551480381451/813037527145381928/logo.png?size=1280" id="logo" class="logo">
+        </a>
+      </center>
+      <h1 id="header_title" class="header_title">Rex</h1>
+      <a id="invite" class="invite" onclick="invite()"><b>Invite</b></a><a id="discord" class="discord" onclick="discord()"><b>Support Server</b></a>
+    </div>
+    
+    <h1 id="title" class="title" data-aos="fade-down">Commands</h1>
+    <br>
+    <br>
+    
+    <div id="searchdropdown" class="searchdropdown" data-aos="fade-down">
+      <input type="search" id="searchbar" class="searchbar" onkeyup="search()" placeholder="Search for a command or category...">
+      
+      <ul id="commands" class="commands">
+<!-- ⛑ Moderation -->
+        <div id="mod" class="mod">
+        
+          <li id="ban" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ban</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="ban_hidden" class="hidden">
+              <div class="description">Bans a user from the server</div>
+              <div class="usage">r.ban &lt;@user/user ID&gt; [reason]</div>
+            </div>
+          </a></li>
+          
+          <li id="delwarns" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>delwarns</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="delwarns_hidden" class="hidden">
+              <div class="description">Deletes all warnings of a user</div>
+              <div class="usage">r.delwarns &lt;@user/user ID&gt;</div>
+            </div>
+          </a></li>
+          
+          <li id="kick" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>kick</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="kick_hidden" class="hidden">
+              <div class="description">Kicks a member from the server</div>
+              <div class="usage">r.kick &lt;@member/member ID&gt; [reason]</div>
+            </div>
+          </a></li>
+
+          <li id="lock" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>lock</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="lock_hidden" class="hidden">
+              <div class="description">Locks the current channel</div>
+              <div class="usage">r.lock</div>
+            </div>
+          </a></li>
+
+          <li id="mute" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>mute</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="mute_hidden" class="hidden">
+              <div class="description">Mutes a specific member</div>
+              <div class="usage">r.mute &lt;@member/member ID&gt; [reason]</div>
+            </div>
+          </a></li>
+
+          <li id="purge" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>purge</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="purge_hidden" class="hidden">
+              <div class="description">Mass deletes an amount of messages</div>
+              <div class="usage">r.purge &lt;value between 0 and 99&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="unban" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>unban</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="unban_hidden" class="hidden">
+              <div class="description">Unbans a specific user</div>
+              <div class="usage">r.unban &lt;user ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="unlock" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>unlock</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="unlock_hidden" class="hidden">
+              <div class="description">Unlocks the current channel</div>
+              <div class="usage">r.unlock</div>
+            </div>
+          </a></li>
+
+          <li id="unmute" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>unmute</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="unmute_hidden" class="hidden">
+              <div class="description">Unmutes a specific member</div>
+              <div class="usage">r.unmute &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="warn" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>warn</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="warn_hidden" class="hidden">
+              <div class="description">Warns a specific member</div>
+              <div class="usage">r.warn &lt;@member/member ID&gt; [reason]</div>
+            </div>
+          </a></li>
+
+          <li id="warnings" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>warnings</b>
+            <div class="category">⛑ Moderation</div>
+            <div id="warnings_hidden" class="hidden">
+              <div class="description">Returns all warnings of a specific user</div>
+              <div class="usage">r.warnings &lt;@user/user ID&gt;</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- ⚙️ Configuration -->
+        <div id="config" class="config">
+        
+          <li id="automod" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>automod</b>
+            <div class="category">⚙️ Configuration</div>
+            <div id="automod_hidden" class="hidden">
+              <div class="description">Enables/Disables modules of the automod
+                <br>- Antiswear: Deletes messages if they contain a swear word
+                <br>- Antispam: Deletes messages if they are spam (Checks every channel, except channels that have "spam" in their name)
+                <br>- Antiinvites: Deletes messages if they contain a Discord invite
+                <br>- Antiraid: Bans members if their account isn't older than 3 days
+              </div>
+              <div class="usage">r.automod &lt;antiswear/antispam/antiinvites/antiraid/all&gt; &lt;enable/disable&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="autorole" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>autorole</b>
+            <div class="category">⚙️ Configuration</div>
+            <div id="autorole_hidden" class="hidden">
+              <div class="description">Sets the role users get when they join the server</div>
+              <div class="usage">r.autorole set &lt;@role/role ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="joinleave" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>joinleave</b>
+            <div class="category">⚙️ Configuration</div>
+            <div id="joinleave_hidden" class="hidden">
+              <div class="description">Sets the join-leave announcements to the current/given channel</div>
+              <div class="usage">r.joinleave set [#channel/channel ID]</div>
+            </div>
+          </a></li>
+
+          <li id="prefix" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>prefix</b>
+            <div class="category">⚙️ Configuration</div>
+            <div id="prefix_hidden" class="hidden">
+              <div class="description">Changes the bot's command prefix</div>
+              <div class="usage">r.prefix set &lt;new prefix&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="rex-logs" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>rex-logs</b>
+            <div class="category">⚙️ Configuration</div>
+            <div id="rex-logs_hidden" class="hidden">
+              <div class="description">Creates a channel to log all used moderation commands to</div>
+              <div class="usage">r.rex-logs</div>
+            </div>
+          </a></li>
+
+          <li id="rex-msglogs" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>rex-msglogs</b>
+            <div class="category">⚙️ Configuration</div>
+            <div id="rex-msglogs_hidden" class="hidden">
+              <div class="description">Creates a channel to log all deleted/updated messages to</div>
+              <div class="usage">r.rex-msglogs</div>
+            </div>
+          </a></li>
+
+          <li id="serverstats" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>serverstats</b>
+            <div class="category">⚙️ Configuration</div>
+            <div id="serverstats_hidden" class="hidden">
+              <div class="description">Sets the serverstats function up</div>
+              <div class="usage">r.serverstats</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- 🎫 Tickets -->
+        <div id="tickets" class="tickets">
+          
+          <li id="add" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>add</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="add_hidden" class="hidden">
+              <div class="description">Adds a member to the ticket</div>
+              <div class="usage">r.add &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="close" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>close</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="close_hidden" class="hidden">
+              <div class="description">Closes a ticket</div>
+              <div class="usage">r.close</div>
+            </div>
+          </a></li>
+
+          <li id="closedcat" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>closedcat</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="closedcat_hidden" class="hidden">
+              <div class="description">Sets the category where all closed tickets will be stored to</div>
+              <div class="usage">r.closedcat set &lt;#category/category ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="remove" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>remove</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="remove_hidden" class="hidden">
+              <div class="description">Removes a specific member from the ticket</div>
+              <div class="usage">r.remove &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="rename" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>rename</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="rename_hidden" class="hidden">
+              <div class="description">Renames the ticket to a specific name</div>
+              <div class="usage">r.rename &lt;new-ticket-name&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="setup" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>setup</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="setup_hidden" class="hidden">
+              <div class="description">Sets the ticket system up</div>
+              <div class="usage">r.setup</div>
+            </div>
+          </a></li>
+
+          <li id="ticket" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ticket</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="ticket_hidden" class="hidden">
+              <div class="description">Creates a new ticket</div>
+              <div class="usage">r.ticket [reason]</div>
+            </div>
+          </a></li>
+
+          <li id="ticketcat" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ticketcat</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="ticketcat_hidden" class="hidden">
+              <div class="description">Sets the category where all created tickets will be stored to</div>
+              <div class="usage">r.ticketcat set &lt;#category/category ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="ticketcreationgui" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ticketcreationgui</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="ticketcreationgui_hidden" class="hidden">
+              <div class="description">Returns the GUI for creating tickets using reactions</div>
+              <div class="usage">r.ticketcreationgui</div>
+            </div>
+          </a></li>
+
+          <li id="transcript" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>transcript</b>
+            <div class="category">🎫 Tickets</div>
+            <div id="transcript_hidden" class="hidden">
+              <div class="description">Creates a transcript of the ticket</div>
+              <div class="usage">r.transcript</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- 🆙 Levels -->
+        <div id="levels" class="levels">
+          
+          <li id="leaderboard" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>leaderboard</b>
+            <div class="category">🆙 Levels</div>
+            <div id="leaderboard_hidden" class="hidden">
+              <div class="description">Returns the guild's level leaderboard</div>
+              <div class="usage">r.leaderboard</div>
+            </div>
+          </a></li>
+
+          <li id="level" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>level</b>
+            <div class="category">🆙 Levels</div>
+            <div id="level_hidden" class="hidden">
+              <div class="description">Checks at which level you are/another user is at and how much xp you/the other user has</div>
+              <div class="usage">r.level [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="resetlevel" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>resetlevel</b>
+            <div class="category">🆙 Levels</div>
+            <div id="resetlevel_hidden" class="hidden">
+              <div class="description">Resets the level(s) of a specific user</div>
+              <div class="usage">r.resetlevel &lt;@user/user ID&gt;</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- 📁 Other -->
+        <div id="other" class="other">
+          
+          <li id="avatar" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>avatar</b>
+            <div class="category">📁 Other</div>
+            <div id="avatar_hidden" class="hidden">
+              <div class="description">Returns your/another member's avatar</div>
+              <div class="usage">r.avatar [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="colorpicker" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>colorpicker</b>
+            <div class="category">📁 Other</div>
+            <div id="colorpicker_hidden" class="hidden">
+              <div class="description">Returns a random color's hexadecimal/the given hexadecimal's color</div>
+              <div class="usage">r.colorpicker &lt;random/#ffffff&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="geoip" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>geoip</b>
+            <div class="category">📁 Other</div>
+            <div id="geoip_hidden" class="hidden">
+              <div class="description">Returns info about an IP address</div>
+              <div class="usage">r.geoip &lt;IP address&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="invites" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>invites</b>
+            <div class="category">📁 Other</div>
+            <div id="invites_hidden" class="hidden">
+              <div class="description">Checks how many users you/another member has invited to the server</div>
+              <div class="usage">r.invites [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="membercount" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>membercount</b>
+            <div class="category">📁 Other</div>
+            <div id="membercount_hidden" class="hidden">
+              <div class="description">Returns member statistics of the server</div>
+              <div class="usage">r.membercounts</div>
+            </div>
+          </a></li>
+
+          <li id="poll" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>poll</b>
+            <div class="category">📁 Other</div>
+            <div id="poll_hidden" class="hidden">
+              <div class="description">Creates a poll about the given topic</div>
+              <div class="usage">r.poll &lt;topic&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="say" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>say</b>
+            <div class="category">📁 Other</div>
+            <div id="say_hidden" class="hidden">
+              <div class="description">Says a specific message</div>
+              <div class="usage">r.say &lt;message&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="servericon" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>servericon</b>
+            <div class="category">📁 Other</div>
+            <div id="servericon_hidden" class="hidden">
+              <div class="description">Returns the icon of the server</div>
+              <div class="usage">r.servericon</div>
+            </div>
+          </a></li>
+
+          <li id="serverinfo" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>serverinfo</b>
+            <div class="category">📁 Other</div>
+            <div id="serverinfo_hidden" class="hidden">
+              <div class="description">Returns info about the server</div>
+              <div class="usage">r.serverinfo</div>
+            </div>
+          </a></li>
+
+          <li id="whois" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>whois</b>
+            <div class="category">📁 Other</div>
+            <div id="whois_hidden" class="hidden">
+              <div class="description">Returns info about you/another member</div>
+              <div class="usage">r.whois [@member/member ID]</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- 😂 Fun -->
+        <div id="fun" class="fun">
+          
+          <li id="ball" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>8ball</b>
+            <div class="category">😂 Fun</div>
+            <div id="ball_hidden" class="hidden">
+              <div class="description">Answers your question</div>
+              <div class="usage">r.8ball &lt;question&gt;</div>
+            </div>
+          </a></li>
+          
+          <li id="binary" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>binary</b>
+            <div class="category">😂 Fun</div>
+            <div id="binary_hidden" class="hidden">
+              <div class="description">Encodes/Decodes the give binary string</div>
+              <div class="usage">r.binary &lt;enc/dec&gt; &lt;string&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="counting" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>counting</b>
+            <div class="category">😂 Fun</div>
+            <div id="counting_hidden" class="hidden">
+              <div class="description">Starts/stops a/the ongoing counting game in the current channel</div>
+              <div class="usage">r.counting &lt;start/stop&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="hack" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hack</b>
+            <div class="category">😂 Fun</div>
+            <div id="hack_hidden" class="hidden">
+              <div class="description">Simulates a hack attack on another member</div>
+              <div class="usage">r.hack &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="howgay" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>howgay</b>
+            <div class="category">😂 Fun</div>
+            <div id="howgay_hidden" class="hidden">
+              <div class="description">Checks how gay you are/another member is</div>
+              <div class="usage">r.howgay [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="joke" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>joke</b>
+            <div class="category">😂 Fun</div>
+            <div id="joke_hidden" class="hidden">
+              <div class="description">Returns a random joke from r/jokes</div>
+              <div class="usage">r.joke</div>
+            </div>
+          </a></li>
+
+          <li id="meme" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>meme</b>
+            <div class="category">😂 Fun</div>
+            <div id="meme_hidden" class="hidden">
+              <div class="description">Returns a random meme from r/memes</div>
+              <div class="usage">r.meme</div>
+            </div>
+          </a></li>
+
+          <li id="pokedex" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>pokedex</b>
+            <div class="category">😂 Fun</div>
+            <div id="pokedex_hidden" class="hidden">
+              <div class="description">Looks statistics of a specific Pokémon up</div>
+              <div class="usage">r.pokedex &lt;Pokémon name&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="ppsize" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ppsize</b>
+            <div class="category">😂 Fun</div>
+            <div id="ppsize_hidden" class="hidden">
+              <div class="description">Checks how long your/another member's wiener is</div>
+              <div class="usage">r.ppsize [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="ship" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ship</b>
+            <div class="category">😂 Fun</div>
+            <div id="ship_hidden" class="hidden">
+              <div class="description">Checks how well 2 objects fit together</div>
+              <div class="usage">r.ship &lt;object&gt; &lt;object&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="tictactoe" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>tictactoe</b>
+            <div class="category">😂 Fun</div>
+            <div id="tictactoe_hidden" class="hidden">
+              <div class="description">Let's you play a game of tictactoe with another member</div>
+              <div class="usage">r.tictactoe &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- 📷 Images -->
+        <div id="imgs" class="imgs">
+          
+          <li id="abandon" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>abandon</b>
+            <div class="category">📷 Images</div>
+            <div id="abandon_hidden" class="hidden">
+              <div class="description">Returns a custom abandon meme</div>
+              <div class="usage">r.abandon &lt;text&gt;</div>
+            </div>
+          </a></li>
+          
+          <li id="aww" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>aww</b>
+            <div class="category">📷 Images</div>
+            <div id="aww_hidden" class="hidden">
+              <div class="description">Returns a random image of a cute animal from r/aww</div>
+              <div class="usage">r.aww</div>
+            </div>
+          </a></li>
+
+          <li id="bear" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>bear</b>
+            <div class="category">📷 Images</div>
+            <div id="bear_hidden" class="hidden">
+              <div class="description">Returns a random image of a bear</div>
+              <div class="usage">r.bear</div>
+            </div>
+          </a></li>
+
+          <li id="birb" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>birb</b>
+            <div class="category">📷 Images</div>
+            <div id="birb_hidden" class="hidden">
+              <div class="description">Returns a random image of a bird</div>
+              <div class="usage">r.birb</div>
+            </div>
+          </a></li>
+
+          <li id="car" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>car</b>
+            <div class="category">📷 Images</div>
+            <div id="car_hidden" class="hidden">
+              <div class="description">Returns a random image of a car</div>
+              <div class="usage">r.car</div>
+            </div>
+          </a></li>
+
+          <li id="cat" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>cat</b>
+            <div class="category">📷 Images</div>
+            <div id="cat_hidden" class="hidden">
+              <div class="description">Returns a random image of a cat</div>
+              <div class="usage">r.cat</div>
+            </div>
+          </a></li>
+
+          <li id="cry" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>cry</b>
+            <div class="category">📷 Images</div>
+            <div id="cry_hidden" class="hidden">
+              <div class="description">Returns a random gif of you crying</div>
+              <div class="usage">r.cry</div>
+            </div>
+          </a></li>
+
+          <li id="cuddle" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>cuddle</b>
+            <div class="category">📷 Images</div>
+            <div id="cuddle_hidden" class="hidden">
+              <div class="description">Returns a random gif of you cuddling with another member</div>
+              <div class="usage">r.cuddle &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="dog" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>dog</b>
+            <div class="category">📷 Images</div>
+            <div id="dog_hidden" class="hidden">
+              <div class="description">Returns a random image of a dog</div>
+              <div class="usage">r.dog</div>
+            </div>
+          </a></li>
+
+          <li id="dolphin" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>dolphin</b>
+            <div class="category">📷 Images</div>
+            <div id="dolphin_hidden" class="hidden">
+              <div class="description">Returns a random image of a dolphin</div>
+              <div class="usage">r.dolphin</div>
+            </div>
+          </a></li>
+          
+          <li id="duckbutt" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>duckbutt</b>
+            <div class="category">📷 Images</div>
+            <div id="duckbutt_hidden" class="hidden">
+              <div class="description">Returns a duckbutt image of you/another member</div>
+              <div class="usage">r.duckbutt &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="eevee" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>eevee</b>
+            <div class="category">📷 Images</div>
+            <div id="eevee_hidden" class="hidden">
+              <div class="description">Returns a random image of Eevee</div>
+              <div class="usage">r.eevee</div>
+            </div>
+          </a></li>
+
+          <li id="elephant" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>elephant</b>
+            <div class="category">📷 Images</div>
+            <div id="elephant_hidden" class="hidden">
+              <div class="description">Returns a random image of an elephant</div>
+              <div class="usage">r.elephant</div>
+            </div>
+          </a></li>
+          
+          <li id="excuseme" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>excuseme</b>
+            <div class="category">📷 Images</div>
+            <div id="excuseme_hidden" class="hidden">
+              <div class="description">Returns a custom excuseme meme</div>
+              <div class="usage">r.excuseme &lt;text&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="facepalm" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>facepalm</b>
+            <div class="category">📷 Images</div>
+            <div id="facepalm_hidden" class="hidden">
+              <div class="description">Returns a random image of you facepalming</div>
+              <div class="usage">r.facepalm</div>
+            </div>
+          </a></li>
+
+          <li id="fish" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>fish</b>
+            <div class="category">📷 Images</div>
+            <div id="fish_hidden" class="hidden">
+              <div class="description">Returns a random image of a fish</div>
+              <div class="usage">r.fish</div>
+            </div>
+          </a></li>
+
+          <li id="food" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>food</b>
+            <div class="category">📷 Images</div>
+            <div id="food_hidden" class="hidden">
+              <div class="description">Returns a random image of food</div>
+              <div class="usage">r.8food</div>
+            </div>
+          </a></li>
+
+          <li id="fox" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>fox</b>
+            <div class="category">📷 Images</div>
+            <div id="fox_hidden" class="hidden">
+              <div class="description">Returns a random image of a fox</div>
+              <div class="usage">r.fox</div>
+            </div>
+          </a></li>
+
+          <li id="gay" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>gay</b>
+            <div class="category">📷 Images</div>
+            <div id="gay_hidden" class="hidden">
+              <div class="description">Returns your/another member's avatar gayed</div>
+              <div class="usage">r.gay [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="giraffe" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>giraffe</b>
+            <div class="category">📷 Images</div>
+            <div id="giraffe_hidden" class="hidden">
+              <div class="description">Returns a random image of a giraffe</div>
+              <div class="usage">r.giraffe</div>
+            </div>
+          </a></li>
+
+          <li id="goose" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>goose</b>
+            <div class="category">📷 Images</div>
+            <div id="goose_hidden" class="hidden">
+              <div class="description">Returns a random image of a goose</div>
+              <div class="usage">r.goose</div>
+            </div>
+          </a></li>
+
+          <li id="hippo" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hippo</b>
+            <div class="category">📷 Images</div>
+            <div id="hippo_hidden" class="hidden">
+              <div class="description">Returns a random image of a hippo</div>
+              <div class="usage">r.hippo</div>
+            </div>
+          </a></li>
+
+          <li id="horse" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>horse</b>
+            <div class="category">📷 Images</div>
+            <div id="horse_hidden" class="hidden">
+              <div class="description">Returns a random image of a horse</div>
+              <div class="usage">r.horse</div>
+            </div>
+          </a></li>
+
+          <li id="hug" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hug</b>
+            <div class="category">📷 Images</div>
+            <div id="hug_hidden" class="hidden">
+              <div class="description">Returns a gif of you hugging another member</div>
+              <div class="usage">r.hug &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="invert" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>invert</b>
+            <div class="category">📷 Images</div>
+            <div id="invert_hidden" class="hidden">
+              <div class="description">Returns your/another member's avatar inverted</div>
+              <div class="usage">r.invert [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="kangaroo" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>kangaroo</b>
+            <div class="category">📷 Images</div>
+            <div id="kangaroo_hidden" class="hidden">
+              <div class="description">Returns a random image of a kangaroo</div>
+              <div class="usage">r.kangaroo</div>
+            </div>
+          </a></li>
+
+          <li id="killerwhale" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>killerwhale</b>
+            <div class="category">📷 Images</div>
+            <div id="killerwhale_hidden" class="hidden">
+              <div class="description">Returns a random image of a killerwhale</div>
+              <div class="usage">r.killerwhale</div>
+            </div>
+          </a></li>
+
+          <li id="kiss" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>kiss</b>
+            <div class="category">📷 Images</div>
+            <div id="kiss_hidden" class="hidden">
+              <div class="description">Returns a gif of you kissing another member</div>
+              <div class="usage">r.kiss&lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="koala" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>koala</b>
+            <div class="category">📷 Images</div>
+            <div id="koala_hidden" class="hidden">
+              <div class="description">Returns a random image of a koala</div>
+              <div class="usage">r.koala</div>
+            </div>
+          </a></li>
+
+          <li id="lion" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>lion</b>
+            <div class="category">📷 Images</div>
+            <div id="lion_hidden" class="hidden">
+              <div class="description">Returns a random image of a lion</div>
+              <div class="usage">r.lion</div>
+            </div>
+          </a></li>
+
+          <li id="lizard" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>lizard</b>
+            <div class="category">📷 Images</div>
+            <div id="lizard_hidden" class="hidden">
+              <div class="description">Returns a random image of a lizard</div>
+              <div class="usage">r.lizard</div>
+            </div>
+          </a></li>
+
+          <li id="llama" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>llama</b>
+            <div class="category">📷 Images</div>
+            <div id="llama_hidden" class="hidden">
+              <div class="description">Returns a random image of a llama</div>
+              <div class="usage">r.llama</div>
+            </div>
+          </a></li>
+
+          <li id="panda" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>panda</b>
+            <div class="category">📷 Images</div>
+            <div id="panda_hidden" class="hidden">
+              <div class="description">Returns a random image of a panda</div>
+              <div class="usage">r.panda</div>
+            </div>
+          </a></li>
+
+          <li id="pat" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>pat</b>
+            <div class="category">📷 Images</div>
+            <div id="pat_hidden" class="hidden">
+              <div class="description">Returns a gif of you patting another member</div>
+              <div class="usage">r.pat &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="penguin" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>penguin</b>
+            <div class="category">📷 Images</div>
+            <div id="penguin_hidden" class="hidden">
+              <div class="description">Returns a random image of a penguin</div>
+              <div class="usage">r.penguin</div>
+            </div>
+          </a></li>
+
+          <li id="pig" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>pig</b>
+            <div class="category">📷 Images</div>
+            <div id="pig_hidden" class="hidden">
+              <div class="description">Returns a random image of a pig</div>
+              <div class="usage">r.pig</div>
+            </div>
+          </a></li>
+
+          <li id="pikachu" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>pikachu</b>
+            <div class="category">📷 Images</div>
+            <div id="pikachu_hidden" class="hidden">
+              <div class="description">Returns a random image of Pikachu</div>
+              <div class="usage">r.pikachu</div>
+            </div>
+          </a></li>
+
+          <li id="quokka" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>quokka</b>
+            <div class="category">📷 Images</div>
+            <div id="quokka_hidden" class="hidden">
+              <div class="description">Returns a random image of a quokka</div>
+              <div class="usage">r.quokka</div>
+            </div>
+          </a></li>
+
+          <li id="raccoon" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>raccoon</b>
+            <div class="category">📷 Images</div>
+            <div id="raccoon_hidden" class="hidden">
+              <div class="description">Returns a random image of a raccoon</div>
+              <div class="usage">r.raccoon</div>
+            </div>
+          </a></li>
+
+          <li id="redpanda" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>redpanda</b>
+            <div class="category">📷 Images</div>
+            <div id="redpanda_hidden" class="hidden">
+              <div class="description">Returns a random image of a red panda</div>
+              <div class="usage">r.redpanda</div>
+            </div>
+          </a></li>
+          
+          <li id="rip" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>rip</b>
+            <div class="category">📷 Images</div>
+            <div id="rip_hidden" class="hidden">
+              <div class="description">Returns a grave image of you/another member</div>
+              <div class="usage">r.rip &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="seal" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>seal</b>
+            <div class="category">📷 Images</div>
+            <div id="seal_hidden" class="hidden">
+              <div class="description">Returns a random image of a seal</div>
+              <div class="usage">r.seal</div>
+            </div>
+          </a></li>
+
+          <li id="shark" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>shark</b>
+            <div class="category">📷 Images</div>
+            <div id="shark_hidden" class="hidden">
+              <div class="description">Returns a random image of a shark</div>
+              <div class="usage">r.shark</div>
+            </div>
+          </a></li>
+
+          <li id="shiba" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>shiba</b>
+            <div class="category">📷 Images</div>
+            <div id="shiba_hidden" class="hidden">
+              <div class="description">Returns a random image of a shiba</div>
+              <div class="usage">r.shiba</div>
+            </div>
+          </a></li>
+
+          <li id="slap" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>slap</b>
+            <div class="category">📷 Images</div>
+            <div id="slap_hidden" class="hidden">
+              <div class="description">Returns a gif of you slapping another member</div>
+              <div class="usage">r.slap &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="snake" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>snake</b>
+            <div class="category">📷 Images</div>
+            <div id="snake_hidden" class="hidden">
+              <div class="description">Returns a random image of a snake</div>
+              <div class="usage">r.snake</div>
+            </div>
+          </a></li>
+
+          <li id="spider" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>spider</b>
+            <div class="category">📷 Images</div>
+            <div id="spider_hidden" class="hidden">
+              <div class="description">Returns a random image of a spider</div>
+              <div class="usage">r.spider</div>
+            </div>
+          </a></li>
+
+          <li id="spin" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>spin</b>
+            <div class="category">📷 Images</div>
+            <div id="spin_hidden" class="hidden">
+              <div class="description">Returns a gif of you/another member spinning</div>
+              <div class="usage">r.spin [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="triggered" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>triggered</b>
+            <div class="category">📷 Images</div>
+            <div id="triggered_hidden" class="hidden">
+              <div class="description">Returns a gif of you/another member being triggered</div>
+              <div class="usage">r.triggered [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="turtle" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>turtle</b>
+            <div class="category">📷 Images</div>
+            <div id="turtle_hidden" class="hidden">
+              <div class="description">Returns a random image of a turtle</div>
+              <div class="usage">r.turtle</div>
+            </div>
+          </a></li>
+          
+          <li id="wanted" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>wanted</b>
+            <div class="category">📷 Images</div>
+            <div id="wanted_hidden" class="hidden">
+              <div class="description">Returns a wanted image of you/another member</div>
+              <div class="usage">r.wanted &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="wasted" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>wasted</b>
+            <div class="category">📷 Images</div>
+            <div id="wasted_hidden" class="hidden">
+              <div class="description">Returns a random image of you/another member being wasted</div>
+              <div class="usage">r.wasted [@member/member ID]</div>
+            </div>
+          </a></li>
+
+          <li id="whale" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>whale</b>
+            <div class="category">📷 Images</div>
+            <div id="whale_hidden" class="hidden">
+              <div class="description">Returns a random image of a whale</div>
+              <div class="usage">r.whale</div>
+            </div>
+          </a></li>
+
+          <li id="wink" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>wink</b>
+            <div class="category">📷 Images</div>
+            <div id="wink_hidden" class="hidden">
+              <div class="description">Returns a gif of you winking to another member</div>
+              <div class="usage">r.wink &lt;@member/member ID&gt;</div>
+            </div>
+          </a></li>
+
+          <li id="ytcomment" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ytcomment</b>
+            <div class="category">📷 Images</div>
+            <div id="ytcomment_hidden" class="hidden">
+              <div class="description">Returns a screenshot of your YouTube comment</div>
+              <div class="usage">r.ytcomment &lt;comment&gt;</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- 🔞 Nsfw -->
+        <div id="nsfw" class="nsfw">
+          
+          <li id="anal" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>anal</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="anal_hidden" class="hidden">
+              <div class="description">Returns a random real anal nsfw gif</div>
+              <div class="usage">r.anal</div>
+            </div>
+          </a></li>
+
+          <li id="booty" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>booty</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="booty_hidden" class="hidden">
+              <div class="description">Returns a random real booty image</div>
+              <div class="usage">r.booty</div>
+            </div>
+          </a></li>
+
+          <li id="classic" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>classic</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="classic_hidden" class="hidden">
+              <div class="description">Returns a random classic hentai gif</div>
+              <div class="usage">r.classic</div>
+            </div>
+          </a></li>
+
+          <li id="ero" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ero</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="ero_hidden" class="hidden">
+              <div class="description">Returns a random erotic hentai image</div>
+              <div class="usage">r.ero</div>
+            </div>
+          </a></li>
+
+          <li id="femdom" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>femdom</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="femdom_hidden" class="hidden">
+              <div class="description">Returns a random femdom hentai image</div>
+              <div class="usage">r.femdom</div>
+            </div>
+          </a></li>
+
+          <li id="futanari" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>futanari</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="futanari_hidden" class="hidden">
+              <div class="description">Returns a random futanari hentai image</div>
+              <div class="usage">r.futanari</div>
+            </div>
+          </a></li>
+
+          <li id="hanal" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hanal</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="hanal_hidden" class="hidden">
+              <div class="description">Returns a random anal hentai image</div>
+              <div class="usage">r.hanal</div>
+            </div>
+          </a></li>
+
+          <li id="hblowjob" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hblowjob</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="hblowjob_hidden" class="hidden">
+              <div class="description">Returns a random blowjob hentai image</div>
+              <div class="usage">r.hblowjob</div>
+            </div>
+          </a></li>
+
+          <li id="hboobs" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hboobs</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="hboobs_hidden" class="hidden">
+              <div class="description">Returns a random boobs hentai image</div>
+              <div class="usage">r.hboobs</div>
+            </div>
+          </a></li>
+
+          <li id="hcum" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hcum</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="hcum_hidden" class="hidden">
+              <div class="description">Returns a random cum hentai image</div>
+              <div class="usage">r.hcum</div>
+            </div>
+          </a></li>
+
+          <li id="hentai" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hentai</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="hentai_hidden" class="hidden">
+              <div class="description">Returns a random hentai image</div>
+              <div class="usage">r.hentai</div>
+            </div>
+          </a></li>
+
+          <li id="hgif" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hgif</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="hgif_hidden" class="hidden">
+              <div class="description">Returns a random hentai gif</div>
+              <div class="usage">r.hgif</div>
+            </div>
+          </a></li>
+
+          <li id="hpussy" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>hpussy</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="hpussy_hidden" class="hidden">
+              <div class="description">Returns a random pussy hentai image</div>
+              <div class="usage">r.hpussy</div>
+            </div>
+          </a></li>
+
+          <li id="htits" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>htits</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="htits_hidden" class="hidden">
+              <div class="description">Returns a random tits hentai image</div>
+              <div class="usage">r.htits</div>
+            </div>
+          </a></li>
+
+          <li id="lesbian" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>lesbian</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="lesbian_hidden" class="hidden">
+              <div class="description">Returns a random lesbian hentai image</div>
+              <div class="usage">r.lesbian</div>
+            </div>
+          </a></li>
+
+          <li id="lewd" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>lewd</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="lewd_hidden" class="hidden">
+              <div class="description">Returns a random lewd hentai image</div>
+              <div class="usage">r.lewd</div>
+            </div>
+          </a></li>
+
+          <li id="lewdneko" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>lewdneko</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="lewdneko_hidden" class="hidden">
+              <div class="description">Returns a random lewdneko hentai image</div>
+              <div class="usage">r.lewdneko</div>
+            </div>
+          </a></li>
+
+          <li id="neko" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>neko</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="neko_hidden" class="hidden">
+              <div class="description">Returns a random neko hentai image</div>
+              <div class="usage">r.neko</div>
+            </div>
+          </a></li>
+
+          <li id="nsfwneko" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>nsfwneko</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="nsfwneko_hidden" class="hidden">
+              <div class="description">Returns a random nsfwneko hentai image</div>
+              <div class="usage">r.nsfwneko</div>
+            </div>
+          </a></li>
+
+          <li id="pussy" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>pussy</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="pussy_hidden" class="hidden">
+              <div class="description">Returns a random real pussy image</div>
+              <div class="usage">r.pussy</div>
+            </div>
+          </a></li>
+
+          <li id="pwankg" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>pwankg</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="pwankg_hidden" class="hidden">
+              <div class="description">Returns a random pwankg hentai image</div>
+              <div class="usage">r.pwankg</div>
+            </div>
+          </a></li>
+
+          <li id="spank" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>spank</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="spank_hidden" class="hidden">
+              <div class="description">Returns a random spank hentai image</div>
+              <div class="usage">r.spank</div>
+            </div>
+          </a></li>
+
+          <li id="trap" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>trap</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="trap_hidden" class="hidden">
+              <div class="description">Returns a random trap hentai image</div>
+              <div class="usage">r.trap</div>
+            </div>
+          </a></li>
+
+          <li id="yuri" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>yuri</b>
+            <div class="category">🔞 Nsfw</div>
+            <div id="yuri_hidden" class="hidden">
+              <div class="description">Returns a random yuri hentai image</div>
+              <div class="usage">r.yuri</div>
+            </div>
+          </a></li>
+          
+        </div>
+<!-- ℹ️ About -->
+        <div id="about" class="about">
+          
+          <li id="botinfo" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>botinfo</b>
+            <div class="category">ℹ️ About</div>
+            <div id="botinfo_hidden" class="hidden">
+              <div class="description">Returns info about the bot and its developer</div>
+              <div class="usage">r.botinfo</div>
+            </div>
+          </a></li>
+
+          <li id="botstats" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>botstats</b>
+            <div class="category">ℹ️ About</div>
+            <div id="botstats_hidden" class="hidden">
+              <div class="description">Returns the bot's statistics</div>
+              <div class="usage">r.botstats</div>
+            </div>
+          </a></li>
+
+          <li id="donate" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>donate</b>
+            <div class="category">ℹ️ About</div>
+            <div id="donate_hidden" class="hidden">
+              <div class="description">Returns a Paypal link to donate to, if you want to support the project</div>
+              <div class="usage">r.donate</div>
+            </div>
+          </a></li>
+
+          <!-- invitecmd -->
+          <li id="invitecmd" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>invite</b>
+            <div class="category">ℹ️ About</div>
+            <div id="invitecmd_hidden" class="hidden">
+              <div class="description">Returns a link to invite the bot to your own Discord server</div>
+              <div class="usage">r.invite</div>
+            </div>
+          </a></li>
+
+          <li id="ping" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>ping</b>
+            <div class="category">ℹ️ About</div>
+            <div id="ping_hidden" class="hidden">
+              <div class="description">Checks the bot's message latency and the Discord API heartbeat's ping</div>
+              <div class="usage">r.ping</div>
+            </div>
+          </a></li>
+
+          <li id="support" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>support</b>
+            <div class="category">ℹ️ About</div>
+            <div id="support_hidden" class="hidden">
+              <div class="description">Returns a link to the official Discord Support Server of the Rex Discord bot</div>
+              <div class="usage">r.support</div>
+            </div>
+          </a></li>
+
+          <li id="website" onmouseover="displayblock(this.id)" onmouseout="displaynone(this.id)"><a><b>website</b>
+            <div class="category">ℹ️ About</div>
+            <div id="website_hidden" class="hidden">
+              <div class="description">Returns a link to the official website of the Rex Discord bot</div>
+              <div class="usage">r.website</div>
+            </div>
+          </a></li>
+          
+        </div>
+        
+      </ul>
+      
+    </div>
+
+    <center>
+      <div id="footer" class="footer">
+        <b>Copyright &copy; 2019 - 2022. All rights reserved.</b><br>Website developed by Tsunami#6271
+      </div>
+    </center>
+    
+  </body>
+</html>
+
+<script>
+//AOS INIT
+  AOS.init();
+//DRAGGABLES
+  document.getElementById("logo").setAttribute("draggable", false);
+//FN INVITE
+  function invite() {
+    window.open("../invite", "_blank", "resizable=yes,top=250,left=700,width=500,height=600");
+  }
+//FN DISCORD
+  function discord() {
+    window.open("../discord", "_blank", "resizable=yes,top=250,left=700,width=500,height=600");
+  }
+//FN SEARCH
+  function search() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("searchbar");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("commands");
+    li = ul.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+//FN DISPLAYBLOCK
+  function displayblock(element_id) {
+    document.getElementById(`${element_id}_hidden`).style.display = "block";
+  }
+//FN DISPLAYNONE
+  function displaynone(element_id) {
+    document.getElementById(`${element_id}_hidden`).style.display = "none";
+  }
+</script>
