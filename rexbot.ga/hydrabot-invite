@@ -1,0 +1,36 @@
+<!--
+  ____           _           _                
+ |  _ \ _____  _| |__   ___ | |_   __ _  __ _ 
+ | |_) / _ \ \/ / '_ \ / _ \| __| / _` |/ _` |
+ |  _ <  __/>  <| |_) | (_) | |_ | (_| | (_| |
+ |_| \_\___/_/\_\_.__/ \___/ \__(_)__, |\__,_|
+                                  |___/     
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <title>Hydra - Invite</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Invite Hydra to your own Discord server! What are you waiting for?">
+    <meta name="keywords" content="hydra, hydra discord bot">
+    <meta name="author" content="Tsunami#6271">
+    <meta name="theme-color" content="#6666ff">
+
+    <meta property="og:title" content="Hydra - Invite">
+    <meta property="og:url" content="https://rexbot.ga/hydrabot-invite">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Invite Hydra to your own Discord server! What are you waiting for?">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/673180485337481239/18778e5af237a192fb72bf48da3a6b4d.png?size=1280">
+    <meta property="og:image:width" content="64">
+    <meta property="og:image:height" content="64">
+    <meta property="og:keywords" content="hydra, hydra discord bot">
+    <meta property="og:locale" content="en-US">
+
+    <link id="favicon" rel="icon" href="https://cdn.discordapp.com/avatars/673180485337481239/18778e5af237a192fb72bf48da3a6b4d.png?size=1280">
+
+    <meta http-equiv="Refresh" content="0; url=https://discord.com/api/oauth2/authorize?client_id=673180485337481239&permissions=8&scope=bot%20applications.commands">
+  </header>
+</html>
