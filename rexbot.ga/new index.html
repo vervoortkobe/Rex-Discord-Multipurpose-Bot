@@ -1,0 +1,166 @@
+<!--
+  ____           _           _                
+ |  _ \ _____  _| |__   ___ | |_   __ _  __ _ 
+ | |_) / _ \ \/ / '_ \ / _ \| __| / _` |/ _` |
+ |  _ <  __/>  <| |_) | (_) | |_ | (_| | (_| |
+ |_| \_\___/_/\_\_.__/ \___/ \__(_)__, |\__,_|
+                                  |___/     
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rex - A multipurpose Discord bot with many functions</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rex is a very useful and multipurpose Discord bot for your Discord server! It has many functions and over 100 commands! What are you waiting for? Invite Rex to your own Discord server!">
+    <meta name="keywords" content="rex discord bot,discord bot,rex home,rex,discord,discordapp,bot,discord bot,discord bots,rex discordapp,discordapp,automod,nsfw,auto-mod,free,easy configuration,discord website,rex bot,
+                                   discord rex bot,discord bot,discord,multipurpose bot, multifunctional bot,multifunction bot,discord logging system,logging sysmtem,moderation,auto-moderation,auto moderation,block bad words,
+                                   block swear words,block scold words,welcome,leave,user event announcement,truly customizable,100% customizable,truly 100% customizable,logging system,memes,images,funny,auto-role, auto role,
+                                   give roles on join,fun commands,fun,entertaining,entertaining commands,fun and entertaining commands,easy-to-use,advanced,many functions,many commands,
+                                   tickets,ticket system,tickets function,discord ticket bot,discord giveaway,many commands,commands,support tickets,moderation,configuration,manage your server,manage your discord server,
+                                   how to manage my server,manage your server,how to manage my discord server,manage logging,moderation logging,uptime,fast,fast discord bot">
+    <meta name="author" content="Tsunami#6271">
+    <meta name="theme-color" content="#ff0000">
+    
+    <meta property="og:title" content="Rex - A multipurpose Discord bot with many functions">
+    <meta property="og:url" content="./">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rex is a very useful and multipurpose Discord bot for your Discord server! It has many functions and over 100 commands! What are you waiting for? Invite Rex to your own Discord server!">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/516227551480381451/813037527145381928/logo.png?size=1280">
+    <meta property="og:image:width" content="64">
+    <meta property="og:image:height" content="64">
+    <meta property="og:keywords" content="rex discord bot,discord bot,rex home,rex,discord,discordapp,bot,discord bot,discord bots,rex discordapp,discordapp,automod,nsfw,auto-mod,free,easy configuration,discord website,rex bot,
+                                   discord rex bot,discord bot,discord,multipurpose bot, multifunctional bot,multifunction bot,discord logging system,logging sysmtem,moderation,auto-moderation,auto moderation,block bad words,
+                                   block swear words,block scold words,welcome,leave,user event announcement,truly customizable,100% customizable,truly 100% customizable,logging system,memes,images,funny,auto-role, auto role,
+                                   give roles on join,fun commands,fun,entertaining,entertaining commands,fun and entertaining commands,easy-to-use,advanced,many functions,many commands,
+                                   tickets,ticket system,tickets function,discord ticket bot,discord giveaway,many commands,commands,support tickets,moderation,configuration,manage your server,manage your discord server,
+                                   how to manage my server,manage your server,how to manage my discord server,manage logging,moderation logging,uptime,fast,fast discord bot">
+    <meta property="og:locale" content="en-US">
+    
+    <link id="favicon" rel="icon" href="https://cdn.discordapp.com/attachments/516227551480381451/813037527145381928/logo.png?size=1280">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/desktopstyle.css">
+    <link rel="stylesheet" href="./css/mobilestyle.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body id="body" class="body">
+    <center>
+      <div id="redback" class="redback">
+        <img src="https://cdn.discordapp.com/attachments/516227551480381451/813037527145381928/logo.png?size=1280" id="logo" class="logo" data-aos="fade-down">
+        <h1 data-aos="fade-down">Rex</h1>
+        <h3 data-aos="fade-down">Rex is offline. Thanks for supporting the project! ❤️</h3>
+        <h3 data-aos="fade-down">A multipurpose Discord bot with many functions.</h3><br><br><br><br><br><br>
+        <div id="buttons" class="buttons" data-aos="fade-down">
+          <a onclick="invite()"><button id="leftbutton" class="leftbutton"><b>Invite</b></button></a><a onclick="discord()"><button id="rightbutton" class="rightbutton"><b>Support Server</b></button></a>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div><br>
+      <h1 data-aos="fade-down"><a style="color: #6a89d1;">About</a></h1>
+      <h3 id="abouth3" class="abouth3" data-aos="fade-down"><a style="color: #6a89d1;">Rex</a> is a very easy-to-use and multipurpose Discord bot for your Discord server! 
+        It has <a style="color: #6a89d1;">over 100 commands</a>, which are divided into <a style="color: #6a89d1;">10 categories</a>. 
+        <a style="color: #6a89d1;">Rex</a> is highly configurable and includes 
+        many useful functions, such as automoderation against spam, swearing, links and raids, 
+        moderation commands, welcome announcements with autorole, a ticket system using reactions, 
+        memes and cute images of animals, a level system, a customizable prefix, server statistics, funny games and much more!
+        <br>What are you waiting for? <a style="color: #6a89d1; text-decoration: none; cursor: pointer;" onclick="invite()">Invite</a> <a style="color: #6a89d1;">Rex</a> to your own Discord server!</h3>
+      <br><br><br>
+      
+      <h1 id="prefixh1" class="prefixh1" data-aos="fade-down"><a style="color: #6a89d1;">Prefix</a></h1><br>
+      <button id="prefix" class="prefix" data-aos="fade-down"><b>r.</b></button>
+      <button id="customizable" class="customizable" style="position: absolute;" data-aos="fade-down"><b>Customizable</b></button>
+      <br><br><br><br><br>
+      
+      <h1 id="categories" class="categories"><a style="color: #6a89d1;">Categories</a></h1><br><br><br><br>
+      <div id="boxes" class="boxes">
+        <a href="./commands#mod" data-aos="fade-down"><button id="mod" class="mod"><b>⛑ Moderation</b></button></a><a href="./commands#config" data-aos="fade-down"><button id="config" class="config"><b>⚙️ Configuration</b></button></a><br><br><br><br><br><br>
+        <a href="./commands#tickets" data-aos="fade-down"><button id="tickets" class="tickets"><b>🎫 Tickets</b></button></a><a href="./commands#levels" data-aos="fade-down"><button id="levels" class="levels"><b>🆙 Levels</b></button></a><br><br><br><br><br><br>
+        <a href="./commands#other" data-aos="fade-down"><button id="other" class="other"><b>📁 Other</b></button></a><a href="./commands#fun" data-aos="fade-down"><button id="fun" class="fun"><b>😂 Fun</b></button></a><br><br><br><br><br><br>
+        <a href="./commands#imgs" data-aos="fade-down"><button id="imgs" class="imgs"><b>📷 Images</b></button></a><a href="./commands#nsfw" data-aos="fade-down"><button id="nsfw" class="nsfw"><b>🔞 Nsfw</b></button></a><br><br><br><br><br><br>
+        <a href="./commands#about" data-aos="fade-down"><button id="about" class="about"><b>ℹ️ About</b></button></a><a href="./commands" data-aos="fade-down"><button id="undefined" class="undefined"><b></b></button></a><br><br><br><br><br>
+      </div>
+      
+      <br><br><br><br><br><br>
+      
+      <a href="./commands" data-aos="fade-down"><button id="middlebutton" class="middlebutton"><b>Commands</b></button></a>
+      
+      <br><br><br><br><br><br><br><br><br><br><br>
+      
+      <div id="botstats" class="botstats" data-aos="fade-down">
+        <!--<div id="servers" class="servers"><b>?</b> Servers</div>
+        <div id="users" class="users"><b>?</b> Users</div>-->
+        <div id="servers" class="servers"><b></b> Offline</div>
+        <div id="users" class="users"><b></b> Offline</div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br>
+      
+      <iframe data-aos="fade-down" src="https://discord.com/widget?id=516227189251768330&theme=dark" style="position: relative;" width="300" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      <div id="modes" class="modes" data-aos="fade-down">
+        <a style="color: #43494e;">Dark Mode</a>
+        <a style="color: #fff;"> | </a>
+        <a style="color: #6a89d1;">Light Mode</a>
+      </div>
+      
+      <br>
+      
+      <label class="switch">
+        <input type="checkbox" id="checkbox" class="checkbox" onchange="toggle()">
+        <span class="slider round"></span>
+      </label>
+      
+      <img src="https://cdn.discordapp.com/attachments/516227551480381451/813037530927857684/footerwave.png?size=1280" id="footerwave" class="footerwave">
+      
+      <div id="footer" class="footer">
+        <b>Copyright &copy; 2019 - 2022. All rights reserved.</b><br>Website developed by Tsunami#6271
+	    </div>
+      
+    </center>
+  </body>
+</html>
+
+<script>
+//AOS INIT
+  AOS.init();
+//DRAGGABLES
+  document.getElementById("logo").setAttribute("draggable", false);
+  document.getElementById("footerwave").setAttribute("draggable", false);
+//FN INVITE
+  function invite() {
+    window.open("./invite", "_blank", "resizable=yes,top=250,left=700,width=500,height=600");
+  }
+//FN DISCORD
+  function discord() {
+    window.open("./discord", "_blank", "resizable=yes,top=250,left=700,width=500,height=600");
+  }
+//FETCH DATA: BOTSTATS: SERVERS & USERS
+  fetch('https://rex.tsunami2360.repl.co/api/')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    document.getElementById("servers").innerHTML = `<b>${data.botstats.servers}</b> Servers`;
+    document.getElementById("users").innerHTML = `<b>${data.botstats.users}</b> Users`;
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+//FN TOGGLE
+  function toggle() {
+    if(document.getElementById("checkbox").checked === true) {
+      document.getElementById("body").style.backgroundColor = "#fff";
+      document.getElementById("abouth3").style.color = "#23272A";
+    } else {
+      document.getElementById("body").style.backgroundColor = "#23272A";
+      document.getElementById("abouth3").style.color = "#fff";
+    }
+  }
+</script>
