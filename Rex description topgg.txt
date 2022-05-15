@@ -1,0 +1,27 @@
+605385562152763395
+A Discord Bot with 150+ commands!
+ejt65jK
+Invite: https://discordapp.com/api/oauth2/authorize?client_id=605385562152763395&permissions=&redirect_uri=http%3A%2F%2Frexbot.ga&scope=bot
+
+<center>Rex<center>
+
+Rex has 150+ commands, divided into 7 categories!
+
+Here are these categories:
+• Moderation
+• Configuration
+• Tickets
+• Other
+• Leveling
+• Fun
+• Images
+• About
+
+Be sure to add Rex to your own Discord server!
+I'm sure you and your servermates will enjoy his features!
+
+
+➤ Join Rex Support Server:
+   http://rexbot.ga/support
+
+© Rex was made by Tsunami#6271
