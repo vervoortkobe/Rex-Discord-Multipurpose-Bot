@@ -1,0 +1,50 @@
+const Discord = require("discord.js");
+const fs = require("fs");
+
+module.exports.run = async (client, message, args) => {
+
+    const v = client.emojis.cache.get("615983179341496321");
+    const x = client.emojis.cache.get("615983201156071424");
+
+    let prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf-8"));
+    if(!prefixes[message.guild.id]) {
+      prefixes[message.guild.id] = {
+        prefixes: process.env.PREFIX
+      }
+    }
+    let prefix = prefixes[message.guild.id].prefixes;
+  
+    let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
+    if(!args[0]) {
+      const gayPic = (`https://some-random-api.ml/canvas/gay?avatar=${message.author.displayAvatarURL().split(".webp")[0] + ".png"}`);
+
+      const gayEmbed = new Discord.MessageEmbed()
+      .setColor(0x03a9f4)
+      .setAuthor(`🏳️‍🌈 | Gay`)
+      .setImage(gayPic)
+      return message.channel.send(gayEmbed)
+      .then(message.react("🏳️‍🌈"));
+    }
+
+    if(!member) {
+      const errorEmbed = new Discord.MessageEmbed()
+      .setColor(0xf04947)
+      .setDescription(`${x} **|** ***Please mention a valid member!***`)
+      return message.channel.send(errorEmbed);
+    }
+
+    const gayPic = (`https://some-random-api.ml/canvas/gay?avatar=${member.user.displayAvatarURL().split(".webp")[0] + ".png"}`);
+
+    const gayEmbed = new Discord.MessageEmbed()
+    .setColor(0x03a9f4)
+    .setAuthor(`🏳️‍🌈 | Gay`)
+    .setImage(gayPic)
+    message.channel.send(gayEmbed)
+    .then(message.react("🏳️‍🌈"));
+  }
+
+  module.exports.help = {
+    name: "gay",
+    aliases: [],
+    category: "imgs"
+}
