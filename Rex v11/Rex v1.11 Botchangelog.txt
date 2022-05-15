@@ -1,0 +1,101 @@
+```md
+# 🤖 | Botchangelog
++ 📥 Updated Commands (11)
+[Other] GeoIP
+[Bot] Help
+[Config] Join-Leave
+[Fun] Joke
+[Levels] Level
+[Fun] Meme
+[Other] Pickcolor
+[Fun] Ppsize
+[Fun] Ship
+[Mod] Unmute
+[Other] Whois
+```
+```md
+# 🤖 | Botchangelog
++ ✔️️ Added Commands (30)
+[Tickets] Adduser
+[Config] Automod Antiswear
+[Config] Autoresponder
+[Imgs] Aww
+[Nsfw] Boobs
+[Tickets] Closedcat
+[Fun] Counting
+[Mod] Delwarns
+[Other] Invites
+[Levels] Leaderboard
+[Music] Lyrics
+[Music] Nowplaying
+[Music] Pause
+[Music] Play
+[Music] Queue
+[Music] Remove
+[Tickets] Removeuser
+[Tickets] Rename
+[Other] Resetlevel
+[Music] Resume
+[Config] ServerStats
+[Tickets] Setup
+[Music] Skip
+[Music] Stop
+[Tickets] Ticketcat
+[Fun] Tictactoe
+[Tickets] Transcript
+[Music] Volume
+[Mod] Warnings
+[Other] YTNotification
+```
+```md
+# 🤖 | Botchangelog
++ ❌ Removed Commands (48)
+[Imgs] Anime
+[Imgs] AnimeAvatar
+[Imgs] AnimeWallpaper
+[Other] Announce
+[About] Api
+[About] Aliases
+[Other] Apply
+[Imgs] Blur
+[Imgs] Blurple
+[About] Bugreport
+[Other] Calc
+[Fun] Chatbot
+[Fun] CoinFlip
+[Imgs] FoxGirl
+[Other] Giveaway
+[Imgs] Glass
+[Imgs] Greyscale
+[Fun] Guessnr
+[Imgs] Hamster
+[Nsfw] Hbj
+[Imgs] Kill
+[Other] Lyrics
+[Other] McUsernCheck
+[Other] Nickname
+[Other] OneTwo
+[Imgs] Pixelate
+[Fun] Quote
+[Other] Report
+[Imgs] Reverse
+[Config] Rex-Apply
+[Config] Rex-Reports
+[Fun] Rps
+[Imgs] Sepia
+[Imgs] Shoot
+[About] Suggest
+[Imgs] Suicide
+[About] Supportus
+[Mod] Tempban
+[Mod] Templock
+[Mod] Tempmute
+[Imgs] Tickle
+[About] Version
+[About] Vote
+[Imgs] Waifu
+[Fun] Weapon
+[Fun] Why
+[Other] YesNo
+[About] YouTube
+```
