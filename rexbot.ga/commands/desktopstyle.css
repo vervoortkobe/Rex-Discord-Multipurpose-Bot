@@ -1,0 +1,183 @@
+/*
+  ____           _           _                
+ |  _ \ _____  _| |__   ___ | |_   __ _  __ _ 
+ | |_) / _ \ \/ / '_ \ / _ \| __| / _` |/ _` |
+ |  _ <  __/>  <| |_) | (_) | |_ | (_| | (_| |
+ |_| \_\___/_/\_\_.__/ \___/ \__(_)__, |\__,_|
+                                  |___/     
+*/
+
+/* DESKTOPS */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #23272a;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    user-select: none;
+  }
+  .header {
+    background-color: #343a40;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 12.5%;
+    width: 100%;
+    transition: ease-in-out 0.25s;
+    border-bottom: 2px solid #fff;
+    user-select: none;
+  }
+  .logo {
+    border: 2px solid #fff;
+    border-radius: 400px;
+    width: 5%;
+    margin-top: 0.5%;
+    cursor: pointer;
+    user-select: none;
+  }
+  .invite {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    right: 14%;
+    top: 50%;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-decoration: none;
+    user-select: none;
+  }
+  .discord {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: roboto, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    right: 0%;
+    top: 50%;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-decoration: none;
+    user-select: none;
+  }
+  .invite:hover,
+  .discord:hover {
+    color: #6a89d1;
+    user-select: none;
+  }
+  .header_title {
+    position: absolute;
+    font-family: roboto, sans-serif;
+    color: #fff;
+    font-size: 38px;
+    left: 3%;
+    top: 10%;
+    cursor: default;
+    user-select: none;
+  }
+  .title {
+    text-align: center;
+    font-family: roboto, sans-serif;
+    color: #fff;
+    font-size: 48px;
+    margin-top: 10%;
+    cursor: default;
+    user-select: none;
+  }
+  #searchdropdown {
+    width: 1000px;
+    margin-left: 25%;
+    user-select: none;
+  }
+  #searchbar {
+    outline: none;
+    background-image: url("https://cdn.discordapp.com/attachments/516227551480381451/813038100678311956/mag.png");
+    background-size: 20px 20px;
+    background-position: 10px 14px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    padding: 12px 20px 12px 40px;
+    width: 100%;
+    font-family: roboto, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #343a40;
+    cursor: text;
+    background-color: transparent;
+    text-decoration: none;
+    user-select: none;
+  }
+  #commands {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    user-select: none;
+  }
+  #commands li a {
+    font-family: roboto, sans-serif;
+    color: #6a89d1;
+    font-size: 16px;
+    border: 2px solid #343a40;
+    cursor: default;
+    margin-top: -1px;
+    background: transparent;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    user-select: none;
+  }
+  .hidden {
+    color: #fff;
+    background-color: #43494e;
+    padding: 2px 2px 2px 6px;
+    user-select: none;
+  }
+  .category {
+    margin-top: -20px;
+    text-align: right;
+    user-select: none;
+  }
+  .hidden {
+    display: none;
+    user-select: none;
+  }
+  .footer {
+    left: 43%;
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    cursor: default;
+    position: absolute;
+    margin-top: 29%;
+    user-select: none;
+  }
+  .footer:hover {
+    color: #6a89d1;
+    user-select: none;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #43494e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6a89d1;
+  }
+}
