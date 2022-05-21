@@ -6,7 +6,7 @@ Rex is a very easy-to-use and multiprupose Discord bot for your Discord server! 
 Rex was released on 20/08/2019 and went offline on 14/05/2022.  
 This means Rex served for more than 998 days!  
   
-# PUBLIC TO-DO LIST  
+PUBLIC TO-DO LIST  
 - backup for levels.json  
 - add timeout  
 - fix whois  
