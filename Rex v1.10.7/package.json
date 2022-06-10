@@ -1,0 +1,19 @@
+{
+  "name": "rex",
+  "version": "1.0.0",
+  "description": "Rex Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tsunami#6271",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security",
+    "google-translate-api": "^2.3.0",
+    "mathjs": "^6.2.3",
+    "node-fetch": "^2.6.0",
+    "superagent": "^5.1.0"
+  }
+}
