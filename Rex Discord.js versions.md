@@ -1,2 +1,18 @@
 # Rex Discord.js versions overview
-- Rex v13 : 13.3.1
+- Rex v1.8 | Discord.js 11.5.1
+- Rex v1.9 | Discord.js 11.5.1
+- Rex v1.10 | Discord.js 11.5.1
+- Rex v1.10.1 | Discord.js 11.5.1
+- Rex v1.10.2 | Discord.js 11.5.1
+- Rex v1.10.3 | Discord.js 11.5.1
+- Rex v1.10.4 | Discord.js 11.5.1
+- Rex v1.10.5 | Discord.js 11.5.1
+- Rex v1.10.6 | Discord.js 11.5.1
+- Rex v1.10.7 | Discord.js 11.5.1
+- Rex v1.10.8 | Discord.js 11.5.1
+- Rex v1.10.8 patch 1 | Discord.js 11.5.1
+- Rex v1.10.8 patch 2 | Discord.js 11.5.1
+- Rex v1.10.8 patch 3 | Discord.js 11.5.1
+- Rex v11 | Discord.js 11.5.1
+- Rex v12 | Discord.js 12.5.1
+- Rex v13 | Discord.js 13.3.1
