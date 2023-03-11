@@ -120,7 +120,7 @@
       <img src="https://cdn.discordapp.com/attachments/516227551480381451/813037530927857684/footerwave.png?size=1280" id="footerwave" class="footerwave">
       
       <div id="footer" class="footer">
-        <b>Copyright &copy; 2019 - 2022. All rights reserved.</b><br>Website developed by Tsunami#6271
+        <b>Copyright &copy; 2019 - <span id="copyrightyear">This year</span>. All rights reserved.</b><br>Website developed by Tsunami#6271
 	    </div>
       
     </center>
@@ -163,4 +163,6 @@
       document.getElementById("abouth3").style.color = "#fff";
     }
   }
+//YEAR UPDATE
+  document.getElementById("copyrightyear").innerHTML = new Date().getFullYear();
 </script>
