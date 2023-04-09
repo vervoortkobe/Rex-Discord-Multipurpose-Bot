@@ -33,7 +33,7 @@ const client = new Discord.Client({ disableMentions: "everyone", ws: { intents: 
     console.log("\x1b[32m", `✔️  ${client.user.username} was started!`);
     console.log("\x1b[0m", "");
 
-    client.user.setActivity(`${client.user.username} is going offline!`, {type: "PLAYING"});
+    client.user.setActivity(`${client.user.username} is online!`, {type: "PLAYING"});
 
     app.get("/api/", (req, res) => {
       res.json({
